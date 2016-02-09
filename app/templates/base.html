@@ -1,0 +1,14 @@
+<html>
+	<head>
+		{% if title %}
+		<title>	{{ title }} - tinyjumbo</title>
+		{% else %}
+		<title>Welcome to tinyjumbo</title>
+		{% endif %}
+	</head>
+	<body>
+		<div>Tinyjumbo: <a href="/index">Home</a></div>
+		<hr>
+		{% block content %}{% endblock %}
+	</body>
+</html>
